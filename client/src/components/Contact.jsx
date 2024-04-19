@@ -36,10 +36,10 @@ const Contact = () => {
       )
       console.log(formDetails);
       console.log(response);
-      toast.success("Contact added successfully");
+      toast.success("Feedback added successfully");
     } catch (error) {
-      console.error("Error adding contact:", error);
-      toast.error("Unable to add contact");
+      console.error("Error adding feedback:", error);
+      toast.error("Unable to add feedback");
     }
   }
 
