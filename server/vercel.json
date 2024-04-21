@@ -1,12 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.js", // Change this to your actual entry point file name
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
-    { "src": "/(.*)", "dest": "/server.js" } // Change this if your entry point file is located in a different directory
+    { "src": "/(.*)", "dest": "/server.js" }
   ]
 }
