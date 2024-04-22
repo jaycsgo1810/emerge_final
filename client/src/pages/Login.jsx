@@ -60,7 +60,7 @@ function Login() {
 
   const getUser = async (id) => {
     try {
-      const temp = await fetchData(`https://emerge-final-vhp9.vercel.app/api/user/getuser/${id}`);
+      const temp = await fetchData(`/user/getuser/${id}`);
       dispatch(setUserInfo(temp));
       return navigate("/");
     } catch (error) {
