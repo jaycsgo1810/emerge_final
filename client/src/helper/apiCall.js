@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN || "https://emerge-final-vhp9.vercel.app";
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN || "https://emerge-backend.vercel.app";
 
 const fetchData = async (url) => {
   const { data } = await axios.get(url, {
