@@ -39,7 +39,7 @@ function Login() {
       }
 
       const { data } = await toast.promise(
-        axios.post("https://emerge-final-vhp9.vercel.app/api/user/login", {
+        axios.post("/user/login", {
           email,
           password,
         }),
