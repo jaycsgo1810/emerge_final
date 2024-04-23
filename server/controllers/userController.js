@@ -37,10 +37,10 @@ const login = async (req, res) => {
     if (!verifyPass) {
       return res.status(400).send("Incorrect credentials");
     }
-    console.log(process.env.JWT_SECRET);
+    
     const token = jwt.sign(
       { userId: emailPresent._id, isAdmin: emailPresent.isAdmin },
-      process.env.JWT_SECRET,
+      '62f64aed1538d5f601978697467f32c6162902b0065550ba4f6fcbd9ffddd920780a50b8dc9927972256bdb7dce55c7003b7857b711837cd78501a139755ea69baa0df6a2db92cdff8d9771188475174d56a2f588a8baff7891aa86af54b4127dc719f2eb829fdcc3045ac3315fd8ff096d2dc8173a16f4ee87e727f00463919e9d61863d70c4a5e9a1f098c406f9fdbb49f35d6e90c2c2480e04b644fd29fda0ff9bb2e28fdfba752966b9c94a00f302c0e970ccdae0fbc8f021fa1782a667a4944fa82c498c1f914cb9535cb9a09f57308bf0ffc679945e4451b11ccb297f7f49e2e69ba3b3aaf97a2f876183105d21d8cda47c98c0b332ef4421ab40856a4',
       {
         expiresIn: "2 days",
       }
