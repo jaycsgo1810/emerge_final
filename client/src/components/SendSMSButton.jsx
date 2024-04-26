@@ -78,7 +78,7 @@ const SendSMSButton = () => {
       toast.success("Alert Sent to the contacts");
     } catch (error) {
       console.error('Error sending SMS:', error);
-      toast.error("Not able to send SMS!");
+      //toast.error("Not able to send SMS!");
     }
   };
 
